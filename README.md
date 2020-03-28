@@ -10,7 +10,6 @@
  - has_many :groups_users
  - has_many :messages
   
-
 ## groups table
 |Column|Type|Options|
 |------|----|-------|
@@ -20,7 +19,6 @@
  - has_many :groups_users
  - has_many :messages
   
-
 ## messages table
 |Column|Type|Options|
 |------|----|-------|
@@ -32,7 +30,6 @@
  - belongs_to :user
  - belongs_to :group
 
-
 ## groups_users table
 |Column|Type|Options|
 |------|----|-------|
@@ -40,4 +37,4 @@
 |user_id|integer|null: false, foreign_key: true|
 ### Association
  - belongs_to :group
- - belongs_to :user 
+ - belongs_to :user
