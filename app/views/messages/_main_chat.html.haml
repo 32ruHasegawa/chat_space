@@ -1,0 +1,47 @@
+.chat_main
+  .chat_main__group_info
+    .group-info_left
+      .group-info_left-name
+        test group
+        .group-info_left-member
+          test Member
+    .group-info_right
+      %a{:href => "#"}
+      %font{:color => "#38aef0"}
+        Edit
+  .chat_main__message_list
+    .message_list
+      .message_list-name_date_time
+        .message_list-name
+          mitsuru
+        .message_list-date_time
+          2020/04/06(Mon) 20:00:00
+      .message_list-type_message
+        こんばんは！
+    .message_list
+      .message_list-name_date_time
+        .message_list-name
+          mitsuru
+        .message_list-date_time
+          2020/04/06(Mon) 20:00:00
+      .message_list-type_message
+        こんばんは！
+    .message_list
+      .message_list-name_date_time
+        .message_list-name
+          mitsuru
+        .message_list-date_time
+          2020/04/06(Mon) 20:00:00
+      .message_list-type_message
+        こんばんは！        
+      
+  .chat_main__message_form
+    .message_form_left
+      .message_form-type_message
+        %input.message_form-type_message_input{:placeholder => "type a message", :type => "text"}/
+      .message_form-image
+        %label{class: "message_form-image_label"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+    .message_form_right
+      Send
