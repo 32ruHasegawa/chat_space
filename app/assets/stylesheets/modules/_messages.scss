@@ -36,14 +36,16 @@ html, body {
         display: flex;
         &_create {
           margin-left: auto;
-        }
+          &_url {
+            color: #ffffff;
+          }
+        }  
         &_edit {
           margin-left: 5px;
-        }
-        a {
-          text-decoration: none;
-          color: #ffffff;
-        }
+          &_url {
+            color: #ffffff;
+          }
+        }  
       }
     }
   }    
@@ -106,9 +108,12 @@ html, body {
       top: 28px;
       right: 40px;
       line-height: 40px;
-      color: #38aef0;
       border: solid 1px #38aef0;
       box-sizing: border-box;
+      &_url {
+        color: #38aef0;
+        text-decoration: none;
+      }
     }  
   }  
   &__message--list {

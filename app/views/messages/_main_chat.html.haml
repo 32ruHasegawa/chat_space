@@ -7,8 +7,7 @@
         .chat_main__group--info_name_member_member
           test Member
     .chat_main__group--info_edit
-      %a{:href => "#"}
-      %font{:color => "#38aef0"}
+      = link_to "#", class:"chat_main__group--info_edit_url" do
         Edit
 
   .chat_main__message--list
@@ -40,7 +39,7 @@
   .chat_main__message--form
     .chat_main__message--form_type_image
       .chat_main__message--form_type_image_type
-        %input.chat_main__message--form_type_image_type_input{:placeholder => "type a message", :type => "text"}/
+        %input.chat_main__message--form_type_image_type_input{placeholder: "type a message", type: "text"}/
       .chat_main__message--form_type_image_image
         %label{class: "chat_main__message--form_type_image_image_label"}
           = icon('fas', 'image')
