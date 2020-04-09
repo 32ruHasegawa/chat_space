@@ -1,23 +1,26 @@
 .side_bar
-  .side_bar__user_name
-    .user_name__icon
-      .user_name mitsuru
-      .icon
-        .icon_create_new
+
+  .side_bar__user
+    .side_bar__user--name_icon
+      .side_bar__user--name_icon_name
+        mitsuru
+      .side_bar__user--name_icon_icon
+        .side_bar__user--name_icon_icon_create
           %a{:href => "#"} 
             %i.far.fa-edit.marginleft
-        .icon_edit
+        .side_bar__user--name_icon_icon_edit
           %a{:href => "#"} 
             %i.fa.fa-cog
-  .side_bar__group_list
-    .groups
-      .group
-        .group_name
+
+  .side_bar__group--list
+    .side_bar__group--list_groups
+      .side_bar__group--list_groups_group
+        .side_bar__group--list_groups_group_name
           techcamp
-        .group_message
+        .side_bar__group--list_groups_group_message
           まだメッセージがありません
-      .group
-        .group_name
+      .side_bar__group--list_groups_group
+        .side_bar__group--list_groups_group_name
           techcamp
-        .group_message
-          まだメッセージがありません　
+        .side_bar__group--list_groups_group_message
+          まだメッセージがありません

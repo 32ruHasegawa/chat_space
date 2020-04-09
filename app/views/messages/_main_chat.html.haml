@@ -1,47 +1,49 @@
 .chat_main
-  .chat_main__group_info
-    .group-info_left
-      .group-info_left-name
+
+  .chat_main__group--info
+    .chat_main__group--info_name_member
+      .chat_main__group--info_name_member_name
         test group
-        .group-info_left-member
+        .chat_main__group--info_name_member_member
           test Member
-    .group-info_right
+    .chat_main__group--info_edit
       %a{:href => "#"}
       %font{:color => "#38aef0"}
         Edit
-  .chat_main__message_list
-    .message_list
-      .message_list-name_date_time
-        .message_list-name
+
+  .chat_main__message--list
+    .chat_main__message--list_name_date_message
+      .chat_main__message--list_name_date_message_name_date
+        .chat_main__message--list_name_date_message_name_date_name
           mitsuru
-        .message_list-date_time
+        .chat_main__message--list_name_date_message_name_date_date
           2020/04/06(Mon) 20:00:00
-      .message_list-type_message
+      .chat_main__message--list_name_date_message_message
+        こんばんは！    
+    .chat_main__message--list_name_date_message
+      .chat_main__message--list_name_date_message_name_date
+        .chat_main__message--list_name_date_message_name_date_name
+          mitsuru
+        .chat_main__message--list_name_date_message_name_date_date
+          2020/04/06(Mon) 20:00:00
+      .chat_main__message--list_name_date_message_message
         こんばんは！
-    .message_list
-      .message_list-name_date_time
-        .message_list-name
+    .chat_main__message--list_name_date_message
+      .chat_main__message--list_name_date_message_name_date
+        .chat_main__message--list_name_date_message_name_date_name
           mitsuru
-        .message_list-date_time
+        .chat_main__message--list_name_date_message_name_date_date
           2020/04/06(Mon) 20:00:00
-      .message_list-type_message
+      .chat_main__message--list_name_date_message_message
         こんばんは！
-    .message_list
-      .message_list-name_date_time
-        .message_list-name
-          mitsuru
-        .message_list-date_time
-          2020/04/06(Mon) 20:00:00
-      .message_list-type_message
-        こんばんは！        
-      
-  .chat_main__message_form
-    .message_form_left
-      .message_form-type_message
-        %input.message_form-type_message_input{:placeholder => "type a message", :type => "text"}/
-      .message_form-image
-        %label{class: "message_form-image_label"}
+
+  .chat_main__message--form
+    .chat_main__message--form_type_image
+      .chat_main__message--form_type_image_type
+        %input.chat_main__message--form_type_image_type_input{:placeholder => "type a message", :type => "text"}/
+      .chat_main__message--form_type_image_image
+        %label{class: "chat_main__message--form_type_image_image_label"}
           = icon('fas', 'image')
           %input{type: "file"}
-    .message_form_right
+    .chat_main__message--form_send
       Send
