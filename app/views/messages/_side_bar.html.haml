@@ -6,7 +6,7 @@
         = current_user.name
       .side_bar__user--name_icon_icon
         .side_bar__user--name_icon_icon_create
-          = link_to "#",class:"side_bar__user--name_icon_icon_create_url" do
+          = link_to new_group_path(current_user),class:"side_bar__user--name_icon_icon_create_url" do
             %i.far.fa-edit.marginleft
         .side_bar__user--name_icon_icon_edit
           = link_to edit_user_path(current_user),class:"side_bar__user--name_icon_icon_edit_url" do
@@ -14,13 +14,10 @@
 
   .side_bar__group--list
     .side_bar__group--list_groups
-      .side_bar__group--list_groups_group
-        .side_bar__group--list_groups_group_name
-          techcamp
-        .side_bar__group--list_groups_group_message
-          まだメッセージがありません
-      .side_bar__group--list_groups_group
-        .side_bar__group--list_groups_group_name
-          techcamp
-        .side_bar__group--list_groups_group_message
-          まだメッセージがありません
+      - current_user.groups.each do |group|
+        .side_bar__group--list_groups_group
+          = link_to groups_path do
+            .side_bar__group--list_groups_group_name
+              = group.name
+            .side_bar__group--list_groups_group_message
+              まだメッセージがありません

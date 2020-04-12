@@ -7,7 +7,7 @@
         .chat_main__group--info_name_member_member
           test Member
     .chat_main__group--info_edit
-      = link_to "#", class:"chat_main__group--info_edit_url" do
+      = link_to edit_group_path(@group.id), class:"chat_main__group--info_edit_url" do
         Edit
 
   .chat_main__message--list
