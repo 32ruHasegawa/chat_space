@@ -3,46 +3,23 @@
   .chat_main__group--info
     .chat_main__group--info_name_member
       .chat_main__group--info_name_member_name
-        test group
+        = @group.name
         .chat_main__group--info_name_member_member
-          test Member
+          MEMBER:  
+          - @group.users.each do |user|
+            = user.name
     .chat_main__group--info_edit
       = link_to edit_group_path(@group.id), class:"chat_main__group--info_edit_url" do
         Edit
 
   .chat_main__message--list
-    .chat_main__message--list_name_date_message
-      .chat_main__message--list_name_date_message_name_date
-        .chat_main__message--list_name_date_message_name_date_name
-          mitsuru
-        .chat_main__message--list_name_date_message_name_date_date
-          2020/04/06(Mon) 20:00:00
-      .chat_main__message--list_name_date_message_message
-        こんばんは！    
-    .chat_main__message--list_name_date_message
-      .chat_main__message--list_name_date_message_name_date
-        .chat_main__message--list_name_date_message_name_date_name
-          mitsuru
-        .chat_main__message--list_name_date_message_name_date_date
-          2020/04/06(Mon) 20:00:00
-      .chat_main__message--list_name_date_message_message
-        こんばんは！
-    .chat_main__message--list_name_date_message
-      .chat_main__message--list_name_date_message_name_date
-        .chat_main__message--list_name_date_message_name_date_name
-          mitsuru
-        .chat_main__message--list_name_date_message_name_date_date
-          2020/04/06(Mon) 20:00:00
-      .chat_main__message--list_name_date_message_message
-        こんばんは！
+    = render @messages
 
   .chat_main__message--form
-    .chat_main__message--form_type_image
+    = form_for [@group, @message], html:{class:"chat_main__message--form_type_image"} do |f|
+      = f.text_field :content, class: 'chat_main__message--form_type_image', placeholder: 'type a message'
       .chat_main__message--form_type_image_type
-        %input.chat_main__message--form_type_image_type_input{placeholder: "type a message", type: "text"}/
-      .chat_main__message--form_type_image_image
-        %label{class: "chat_main__message--form_type_image_image_label"}
-          = icon('fas', 'image')
-          %input{type: "file"}
-    .chat_main__message--form_send
-      Send
+        = f.label :image, class: 'chat_main__message--form_type_image_image' do
+          = icon('fas', 'image', class: 'chat_main__message--form_type_image_label')
+          = f.file_field :image, class: 'chat_main__message--form_type_image_type_input'
+      = f.submit 'Send', class: 'chat_main__message--form_send'
