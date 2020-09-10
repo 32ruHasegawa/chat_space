@@ -1,4 +1,10 @@
-# ChatSpace DB設計
+[![Image from Gyazo](https://i.gyazo.com/f1d9f37027438e5e36d9553029954611.gif)](https://gyazo.com/f1d9f37027438e5e36d9553029954611)　　
+  
+  
+  
+  
+  
+  # ChatSpace DB設計
 ## users table
 |Column|Type|Options|
 |------|----|-------|
