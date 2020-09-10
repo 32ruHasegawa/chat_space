@@ -1,4 +1,4 @@
-[![Image from Gyazo](https://i.gyazo.com/3f07c6d964337990f1e5cb789cdc11bc.gif)](https://gyazo.com/3f07c6d964337990f1e5cb789cdc11bc)
+[![Image from Gyazo](https://i.gyazo.com/9d879c961b85569ddce68564585c83b5.gif)](https://gyazo.com/9d879c961b85569ddce68564585c83b5)
   
   
   # ChatSpace DB設計
