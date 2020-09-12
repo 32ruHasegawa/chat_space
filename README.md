@@ -1,7 +1,26 @@
-[![Image from Gyazo](https://i.gyazo.com/9d879c961b85569ddce68564585c83b5.gif)](https://gyazo.com/9d879c961b85569ddce68564585c83b5)
+#アプリ名  
+chat_space
+
+##概要  
+チャットアプリケーション  
+・ユーザーを登録しグループを作成。  
+・作成したグループ上でチャットする。  
+・グループメンバーには、登録したユーザーなら誰でも加入可。一名のみも可。  
   
+##作成背景  
+ゼロからサービスを開発していきながらアプリケーションを開発するために必要な知識や進め方を学ぶため。  
+
+##DEMO　　 
+[![Image from Gyazo](https://i.gyazo.com/9d879c961b85569ddce68564585c83b5.gif)](https://gyazo.com/9d879c961b85569ddce68564585c83b5)  
+
+##工夫したポイント  
+・シンプルなデザインにしたこと  
+・ajaxを導入したこと  
   
-  # ChatSpace DB設計
+##使用技術（開発環境）  
+    
+
+DB設計
 ## users table
 |Column|Type|Options|
 |------|----|-------|
