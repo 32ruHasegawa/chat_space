@@ -18,8 +18,7 @@ DEMO　　
 ・ajaxを導入したこと  
   
 使用技術（開発環境）  
-
-
+Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
 
 DB設計
 ## users table
