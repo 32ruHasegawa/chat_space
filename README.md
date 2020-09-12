@@ -12,6 +12,7 @@
 
 DEMO　　 
 [![Image from Gyazo](https://i.gyazo.com/9d879c961b85569ddce68564585c83b5.gif)](https://gyazo.com/9d879c961b85569ddce68564585c83b5)  
+※二画面でajaxを確認する動画になっております。
 
 工夫したポイント  
 ・シンプルなデザインにしたこと  
